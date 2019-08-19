@@ -1,0 +1,70 @@
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  height: 100%;
+}
+#app .main {
+  height: 100%;
+  background: url("../img/index_bg2.jpg") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  position: relative;
+}
+#app .main .main-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 0.8;
+  width: 300px;
+  min-height: 300px;
+  box-shadow: 3px 2px 10px 0 rgba(35, 36, 38, 0.1);
+  border-radius: 5px;
+  padding: 30px;
+}
+#app .main .main-box .info-box .simple {
+  font-size: 30px;
+  color: #333;
+}
+#app .main .main-box .info-box .detail {
+  margin: 30px 0;
+}
+#app .main .main-box .about-box {
+  margin-top: 10px;
+  color: #999;
+}
+#app .main .main-box .about-box .about-title {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #dfe6eb;
+}
+#app .main .main-box .about-box .about-content {
+  margin-top: 25px;
+}
+#app .main .main-box .about-box .about-content .about-div {
+  cursor: pointer;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin-left: 10px;
+}
+#app .main .main-box .about-box .about-content .about-div:first-child {
+  margin-left: 0;
+}
+#app .main .main-box .about-box .about-content .about-div:hover {
+  color: #333;
+}
+#app .main .main-box .about-box .about-content .about-div img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  float: left;
+}
+#app .main .main-box .about-box .about-content .about-div .info {
+  float: left;
+  display: inline-block;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=index.css.map */

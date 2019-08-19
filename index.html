@@ -1,1 +1,58 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.ico><title>vue-demo(wqs)</title><link href=css/chunk-vendors.0bb9788c.css rel=preload as=style><link href=css/index.cd495de0.css rel=preload as=style><link href=js/chunk-vendors.4d3f42c0.js rel=preload as=script><link href=js/index.dfce563a.js rel=preload as=script><link href=css/chunk-vendors.0bb9788c.css rel=stylesheet><link href=css/index.cd495de0.css rel=stylesheet></head><body><noscript><strong>We're sorry but vue-demo-01 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=js/chunk-vendors.4d3f42c0.js></script><script src=js/index.dfce563a.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/settings/favicon.ico">
+    <!-- 引入less样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>王求送的个人网站</title>
+    <!-- 引入js -->
+</head>
+<body>
+    <div id="app">
+        <div class="main">
+            <div class="main-box">
+                <div class="info-box">
+                    <div class="simple">
+                        <span>王求送</span>
+                    </div>
+                    <div class="detail">
+                        <p>欢迎来到我的个人网站，IT行业前端开发工程师。</p>
+                        <p>欢迎交流：{{mail}}</p>
+                    </div>
+                </div>
+                <div class="about-box">
+                    <div class="about-title">我的相关</div>
+                    <div class="about-content">
+                        <div class="about-div" @click="toPage('CSDN')">
+                            <img src="img/favicon-csdn.ico" alt="csdn">
+                            <div class="info">CSDN</div>
+                        </div>
+                        <div class="about-div" @click="toPage('github')">
+                            <img src="img/favicon-github.ico" alt="github">
+                            <div class="info">github</div>
+                        </div>
+                        <div class="about-div" @click="toPage('SF')">
+                            <img src="img/favicon-sf.ico" alt="SF">
+                            <div class="info">SF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<!-- import settings -->
+<script>
+    document.write('<script src="/settings/settings.js?_=' + new Date().getTime() + '"><\/script>');
+</script>
+<!-- import Self JavaScript -->
+<script src="js/index.js"></script>
+</html>
